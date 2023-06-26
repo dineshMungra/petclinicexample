@@ -6,8 +6,6 @@
 
 tasks:
   - before: git config --global --unset credential.helper
-    command: git pull
     init: mvn install -DskipTests=false
-
-
-
+image:
+  file: .gitpod.Dockerfile
