@@ -62,6 +62,7 @@ public class PetClinicIntegrationTests {
 		ResponseEntity<String> result = template.exchange(RequestEntity.get("/vets.html").build(), String.class);
 		assertThat(result.getStatusCode()).isEqualTo(HttpStatus.OK);
 	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(PetClinicApplication.class, args);
 	}
